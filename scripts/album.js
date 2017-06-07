@@ -30,6 +30,22 @@
      ]
  };
  
+  // My Example Album - Assignment
+ var albumArchangel = {
+     title: 'Archangel',
+     artist: 'Two Steps From Hell',
+     label: 'EM',
+     year: '2011',
+     albumArtUrl: 'assets/images/album_covers/20.png',
+     songs: [
+         { title: 'Strength of a Thousand Men', duration: '1:01' },
+         { title: 'Archangel', duration: '5:01' },
+         { title: 'Blackheart', duration: '3:21'},
+         { title: 'Dragon Rider', duration: '3:14' },
+         { title: 'United We Stand - Divided We Fall', duration: '2:15'}
+     ]
+ };
+ 
  var createSongRow = function(songNumber, songName, songLength) {
      var template =
         '<tr class="album-view-song-item">'
@@ -64,6 +80,22 @@
          albumSongList.innerHTML += createSongRow(i + 1, album.songs[i].title, album.songs[i].duration);
      }
  };
+ 
+ function myFunction(){
+  // Add an event listener to the album cover. 
+  // When a user clicks it, the album page content 
+  // should toggle between the three album objects: 
+  // albumPicasso, albumMarconi, and your album object.
+  // var myAlbumArr = ["albumPicasso","albumMarconi","albumArchangel"];
+  var x = document.getElementsByClassName('album-view-title')[0];
+  if (x.innerHTML=="The Colors"){
+     setCurrentAlbum(albumMarconi);
+   } else if (x.innerHTML=="The Telephone"){
+     setCurrentAlbum(albumArchangel);
+   } else{
+     setCurrentAlbum(albumMarconi);
+   }
+ }
  
  window.onload = function() {
      setCurrentAlbum(albumPicasso);
