@@ -36,7 +36,7 @@
      artist: 'Two Steps From Hell',
      label: 'EM',
      year: '2011',
-     albumArtUrl: 'assets/images/album_covers/20.png',
+     albumArtUrl: 'assets/images/album_covers/22.png',
      songs: [
          { title: 'Strength of a Thousand Men', duration: '1:01' },
          { title: 'Archangel', duration: '5:01' },
@@ -92,8 +92,8 @@
      setCurrentAlbum(albumMarconi);
    } else if (x.innerHTML=="The Telephone"){
      setCurrentAlbum(albumArchangel);
-   } else{
-     setCurrentAlbum(albumMarconi);
+   } else {
+     setCurrentAlbum(albumPicasso);
    }
  }
  
