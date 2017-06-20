@@ -73,8 +73,6 @@
               currentParent = currentParent.parentElement;
           }
           return currentParent;
-       }else{
-           console.log("No parent found")
        }
  };
     
