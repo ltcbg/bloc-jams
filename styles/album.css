@@ -86,6 +86,14 @@
      padding-left: 5px;
  }
  
+ .album-song-button .ion-play {
+    padding-left: 1px;
+}
+
+.album-song-button .ion-pause {
+    padding-left: 1px;
+}
+ 
  @media (max-width: 40rem) and (min-width: 20rem) {
     .album-view-details {
         text-align: center;
